@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-image: url(images/Passport_size_pic.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.container{
+    padding: 15px 15px;
+    margin: 10px 10px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav h2{
+    color: #ff004f;
+    font-weight: 800;
+    font-size: 40px;
+}
+nav ul li{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 10px 20px;
+    list-style: none;
+    position: end;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.main{
+    display: flex;
+    margin: 5px 5px;
+    padding: 5px 10px;
+}
+.c-img{
+    height: 500px;
+    padding: 5px 5px;
+    position: end;
+    width: 500px;
+    border-radius: 500px;
+    border: 5px solid rgb(239, 227, 3)
+}
+.header-text{
+    margin-top: 10%;
+    font-size: 20px;
+    flex-basis: 60%;
+}
+.header-text h1{
+    font-size: 30px;
+    margin-top: 35px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+#about{
+    padding: 50px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 80px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.subtitle{
+    font-size: 30px;
+    font-weight: 400;
+    color: #ff004f;
+}
+.subtitle1{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    color: aqua;
+    padding-bottom: 10px;
+}
+.skill{
+    padding: 10px;
+}
+.skill li span{
+    color: #0ccd86;
+    font-size: 20px;
+}
+.skill li{
+    padding-left: 15px;
+    padding-top: 10px;
+    text-decoration: none;
+    list-style: none;
+    color: aqua;
+}
+/* --------------------academic---------------------- */
+#academic{
+  padding-left: 5px;
+  padding-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.academic-list{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+   grid-gap: 40px;
+   margin-top: 50px;
+}
+.academic-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+}
+.academic-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #0ccd86;
+    margin-bottom: 20px;
+}
+.academic-list div p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.academic-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.subtitle{
+    color: #ff004f;
+    font-size: 40px;
+    font-weight: 400;
+
+}
+/* ------------------contact---------------------- */
+#contact{
+    margin-top: 2px;
+    margin-bottom: 30px;
+}
+.contact-left{
+    flex-basis: 30%;
+
+}
+.contact-right{
+     flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    transition: transform 0.5s;
+    display: inline-block;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(5px);
+}
+.contact-right form{
+    width: 100%;
+
+}
+form input,form textarea{
+    width: 90%;
+    border: 0;
+    outline:none;
+    background: #262626;
+    padding: 30px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+button{
+    color: #fff8fa;
+    padding: 8px 22px;
+    background-color: #ff004f;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.sub-title{
+    color: #ff004f;
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-weight: 600;
+}
+button:hover{
+    color: #79eb15;
+    transform: translateY(-5px);
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    padding-bottom: 5px;
+    font-style:inherit;
+}#academic{
+    padding-bottom: 80px;
+    padding-top: 50px;
+}
